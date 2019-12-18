@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"module": "esnext",
+		"esModuleInterop": true,
+		"target": "es5",
+		"lib": ["esnext"],
+		"declaration": true,
+		"incremental": true,
+		"sourceMap": true,
+		"pretty": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"strictBindCallApply": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true
+	}
+}
