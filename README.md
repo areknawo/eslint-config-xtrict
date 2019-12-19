@@ -1,5 +1,7 @@
 # eslint-config-xtrict
 
+[![](https://img.shields.io/twitter/follow/areknawo?label=Follow&style=for-the-badge)](https://twitter.com/areknawo) [![](https://img.shields.io/twitter/url?style=for-the-badge&url=https%3A%2F%2Fgithub.com%2Fareknawo%2Feslint-config-xtrict)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fareknawo%2Feslint-config-xtrict&via=areknawo&text=Check%20out%20this%20ESLInt%20Config%21)
+
 Extremely strict ESLint config for demanding projects 🔥
 
 ## Reasons
