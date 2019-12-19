@@ -21,7 +21,8 @@
 	},
 	"files": [
 		"configs",
-		"LICENSE.md",
+		"LICENSE",
+		"README.md",
 		"index.js",
 		"tsconfig.json",
 		"values.js",
