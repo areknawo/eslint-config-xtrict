@@ -3,7 +3,7 @@ const { ERROR, OFF } = require("../values");
 module.exports = {
 	parser: "@typescript-eslint/parser",
 	rules: {
-		"@typescript-eslint/array-type": [ERROR, "array-simple"],
+		"@typescript-eslint/array-type": [ERROR, { default: "array-simple" }],
 		"@typescript-eslint/await-thenable": ERROR,
 		"@typescript-eslint/ban-ts-ignore": ERROR,
 		"@typescript-eslint/ban-types": [
