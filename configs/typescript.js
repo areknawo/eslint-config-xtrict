@@ -2,6 +2,11 @@ const { ERROR, OFF } = require("../values");
 
 module.exports = {
 	parser: "@typescript-eslint/parser",
+	parserOptions: {
+		project: "./**/tsconfig.json",
+		ecmaVersion: 2019,
+		sourceType: "module",
+	},
 	rules: {
 		"@typescript-eslint/array-type": [ERROR, { default: "array-simple" }],
 		"@typescript-eslint/await-thenable": ERROR,
@@ -12,26 +17,26 @@ module.exports = {
 				types: {
 					Number: {
 						message: "Use number instead",
-						fixWith: "number"
+						fixWith: "number",
 					},
 					String: {
 						message: "Use string instead",
-						fixWith: "string"
+						fixWith: "string",
 					},
 					Boolean: {
 						message: "Use boolean instead",
-						fixWith: "boolean"
+						fixWith: "boolean",
 					},
 					Symbol: {
 						message: "Use symbol instead",
-						fixWith: "symbol"
+						fixWith: "symbol",
 					},
 					Object: {
 						message: "Use object instead",
-						fixWith: "object"
-					}
-				}
-			}
+						fixWith: "object",
+					},
+				},
+			},
 		],
 		"@typescript-eslint/consistent-type-definitions": ["error", "interface"],
 		"@typescript-eslint/explicit-function-return-type": [
@@ -39,8 +44,8 @@ module.exports = {
 			{
 				allowExpressions: true,
 				allowTypedFunctionExpressions: true,
-				allowHigherOrderFunctions: true
-			}
+				allowHigherOrderFunctions: true,
+			},
 		],
 		"func-call-spacing": OFF,
 		"@typescript-eslint/func-call-spacing": ERROR,
@@ -52,8 +57,8 @@ module.exports = {
 		"@typescript-eslint/no-empty-interface": [
 			ERROR,
 			{
-				allowSingleExtends: true
-			}
+				allowSingleExtends: true,
+			},
 		],
 		"@typescript-eslint/no-explicit-any": OFF,
 		"@typescript-eslint/no-extraneous-class": [ERROR, { allowConstructorOnly: true }],
@@ -62,8 +67,8 @@ module.exports = {
 			ERROR,
 			{
 				ignoreParameters: false,
-				ignoreProperties: false
-			}
+				ignoreProperties: false,
+			},
 		],
 		"no-magic-numbers": OFF,
 		"@typescript-eslint/no-magic-numbers": [
@@ -72,8 +77,8 @@ module.exports = {
 				ignore: [0, 1, -1],
 				ignoreArrayIndexes: true,
 				ignoreNumericLiteralTypes: true,
-				ignoreEnums: true
-			}
+				ignoreEnums: true,
+			},
 		],
 		"@typescript-eslint/no-non-null-assertion": OFF,
 		"@typescript-eslint/no-object-literal-type-assertion": OFF,
@@ -81,8 +86,8 @@ module.exports = {
 		"@typescript-eslint/no-this-alias": [
 			ERROR,
 			{
-				allowDestructuring: true
-			}
+				allowDestructuring: true,
+			},
 		],
 		"@typescript-eslint/camelcase": OFF,
 		"@typescript-eslint/no-type-alias": OFF,
@@ -101,13 +106,13 @@ module.exports = {
 		"@typescript-eslint/unified-signatures": ERROR,
 		"no-mixed-spaces-and-tabs": [ERROR, "smart-tabs"],
 		"no-dupe-class-members": OFF,
-		"no-unused-vars": OFF
+		"no-unused-vars": OFF,
 	},
 	plugins: ["@typescript-eslint", "import"],
 	extends: [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
 		"plugin:@typescript-eslint/recommended",
-		"plugin:import/typescript"
-	]
+		"plugin:import/typescript",
+	],
 };
