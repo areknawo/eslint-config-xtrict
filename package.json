@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-xtrict",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Extremely strict ESLint config for demanding projects.",
 	"main": "index.js",
 	"repository": "https://github.com/areknawo/eslint-config-xtrict",
@@ -24,7 +24,7 @@
 		"LICENSE",
 		"README.md",
 		"index.js",
-		"patch.js",
+		"patch-eslint6.js",
 		"tsconfig.json",
 		"values.js",
 		".prettierrc"
