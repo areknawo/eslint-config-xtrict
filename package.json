@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-xtrict",
-	"version": "2.0.1",
+	"version": "3.0.0",
 	"description": "Extremely strict ESLint config for demanding projects.",
 	"main": "index.js",
 	"repository": "https://github.com/areknawo/eslint-config-xtrict",
