@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-xtrict",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "Extremely strict ESLint config for demanding projects.",
 	"main": "index.js",
 	"repository": "https://github.com/areknawo/eslint-config-xtrict",
@@ -30,14 +30,14 @@
 		".prettierrc"
 	],
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^2.25.0",
-		"@typescript-eslint/parser": "^2.25.0",
-		"eslint-config-prettier": "^6.10.1",
-		"eslint-plugin-import": "^2.20.1",
-		"eslint-plugin-jsdoc": "^22.1.0",
-		"eslint-plugin-prettier": "^3.1.2",
+		"@typescript-eslint/eslint-plugin": "^3.7.0",
+		"@typescript-eslint/parser": "^3.7.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jsdoc": "^30.0.3",
+		"eslint-plugin-prettier": "^3.1.4",
 		"eslint-plugin-sonarjs": "^0.5.0",
-		"eslint-plugin-unicorn": "^17.2.0"
+		"eslint-plugin-unicorn": "^21.0.0"
 	},
 	"devDependencies": {
 		"eslint": "^7.0.0",
