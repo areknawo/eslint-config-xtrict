@@ -37,8 +37,6 @@ The config is very much tailored towards the use of TypeScript (as its recommend
 ```
 
 ```javascript
-require("eslint-config-xtrict/patch-eslint6");
-
 module.exports = {
 	extends: ["xtrict"],
 	parserOptions: {
@@ -47,7 +45,17 @@ module.exports = {
 };
 ```
 
-It's important to include the special patching script, which allows ESLint v6 to properly resolve plugins used by the config (see [this issue for more details](https://github.com/eslint/eslint/issues/3458#issuecomment-516716165)). Apart from that if you're using TypeScript, you'll also have to supply `tsconfigRootDir` option, equal to global variable `__dirname`.
+The config is designed to work with ESLint v7, but if you're using v6, it's important to include the special patching script at top of your config file, which allows ESLint v6 to properly resolve plugins used by the config (see [this issue for more details](https://github.com/eslint/eslint/issues/3458#issuecomment-516716165)).
+
+```javascript
+require("eslint-config-xtrict/patch-eslint6");
+
+module.exports = {
+	// ...
+};
+```
+
+Apart from that if you're using TypeScript, you'll also have to supply `tsconfigRootDir` option, equal to global variable `__dirname`.
 
 If you use Prettier (also recommended), there's a reference config included, if you want.
 
